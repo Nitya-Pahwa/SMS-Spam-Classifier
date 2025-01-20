@@ -1,0 +1,107 @@
+SMS Spam Classifier Project
+
+Overview
+
+This project involves building a predictive model to classify SMS messages as spam or not spam. It analyzes text-based messages and predicts their classification based on certain features extracted from the text.
+
+Key Objectives
+
+- Classify SMS messages as "Spam" or "Not Spam" based on their content.
+- Understand the relationship between text features and spam classification.
+- Provide an efficient and user-friendly spam classification solution.
+
+Dataset
+
+- Source: A dataset containing SMS messages labeled as spam or not spam extracted from kaggle.
+- Features:The dataset include attributes such as:
+  - Text: The content of the SMS.
+  - Output: Target variable indicating if the message is spam or ham.
+
+Methodology
+
+1. Data Cleaning:
+
+   - Knowing the type of encoding of data
+   - Load the dataset and understand its structure.
+   - Check for missing values and handle them appropriately.
+   - Remove duplicate rows if any.
+   - Converted the output column to 0 for not spam and 1 for spam using label encoder
+
+2. Exploratory Data Analysis (EDA):
+
+   - Analyze the distribution of spam and non-spam messages.
+   - Visualize word frequencies for spam and non-spam categories.
+   - Seeing the correlation between columns using heatmap.
+3. Data PreProcessing:
+
+   - Making all the text to lowercase.
+   - Tokenization
+   - Removing special characters, punctuations, stop words
+   - Stemming
+   - Generating the wordcloud for both spam and not spam messages
+
+4. Modeling:
+   
+   - Apply text vectorization techniques such as:
+     - Bag of Words (BoW)
+     - TF-IDF (Term Frequency-Inverse Document Frequency)
+   - Split the data into training and testing sets.
+   - Train machine learning models such as:
+     
+     - Logistic Regression
+     - Gaussian Naive Bayes 
+     - Multinomial Naive Bayes
+     - Bernoullis Naive Bayes
+     - Support Vector Machine (SVM)
+     - Decision Tree Classifier
+     - KNeighborsClassifier
+     - AdaBoostClassifier
+     - BaggingClassifier
+     - ExtraTreesClassifier
+     - Random Forest Classifier
+     - GradientBoostingClassifier
+     - XGBoost Classifier
+   - Evaluate models using metrics such as accuracy score, precision score.
+
+
+6. Prediction and Validation:
+
+   - Test the model on unseen data.
+   - Compare predicted outcomes with actual outcomes.
+
+Libraries and Tools Used
+
+- Python: Programming language for implementation.
+- Pandas: For data manipulation and analysis.
+- NumPy: For numerical computations.
+- Matplotlib and Seaborn: For data visualization.
+- Chardet: To know the encoding type of the dataset.
+- WordCloud: For making the wordcloud of spam and not spam messages.
+- String: For getting all the punctuations marks of English.
+- NLTK: For natural language processing.
+- XGBoost: For XGBoost Classifier.
+- Collections: For extracting top 50 words for both spam and not spam messages.
+- Scikit-learn: For machine learning modeling and evaluation.
+- Jupyter Notebook: For interactive coding and documentation.
+
+Results
+
+- The model achieved a satisfactory level of accuracy and other performance metrics in classifying SMS messages.
+- Identified key patterns and features in spam messages through text analysis.
+
+Prerequisites
+
+- Python
+- Required Libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - chardet
+  - collections
+  - string
+  - scikit-learn
+  - nltk
+  - wordcloud
+  - xgboost
+  - jupyter notebook
